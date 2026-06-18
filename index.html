@@ -3,28 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alex Bercik</title>
+  <title>Home | Alex Bercik</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Alex Bercik</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/software.html">Software</a>
-      <a href="/publications.html">Publications</a>
-      <a href="/teaching.html">Teaching</a>
-      <a href="/cv.html">CV</a>
+  <!-- Site header and navigation. -->
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="publications.html">Publications</a>
+      <a href="software.html">Software</a>
+      <a href="about.html">About Me</a>
+      <a href="cv.html">CV</a>
     </nav>
   </header>
 
   <main>
-    <h2>Home</h2>
-    <p>
-      I am a PhD candidate in aerospace engineering at the University of Toronto
-      Institute for Aerospace Studies.
-    </p>
+    <!-- Homepage introduction. -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Alex Bercik</h1>
+        <p class="title-line">PhD Candidate</p>
+        <p class="affiliation-line">University of Toronto Institute for Aerospace Studies</p>
+        <p class="contact-line">alex [dot] bercik [at] mail.utoronto.ca</p>
+        <div class="social-links" aria-label="Academic and code profiles">
+          <a href="https://scholar.google.com/citations?user=2FA_S1sAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar">
+            <img src="files/google-scholar.svg" alt="" aria-hidden="true">
+            <span class="sr-only">Google Scholar</span>
+          </a>
+          <a href="https://www.researchgate.net/profile/Alex-Bercik" aria-label="ResearchGate" title="ResearchGate">
+            <img src="files/researchgate.svg" alt="" aria-hidden="true">
+            <span class="sr-only">ResearchGate</span>
+          </a>
+          <a href="https://github.com/alexbercik" aria-label="GitHub" title="GitHub">
+            <img src="files/github.svg" alt="" aria-hidden="true">
+            <span class="sr-only">GitHub</span>
+          </a>
+        </div>
+        <p> </p>
+        <p>
+          Welcome to my home page!
+        </p>
+        <p class="affiliation-line"> Group website:
+        <a href="https://www.utias.utoronto.ca/computational-aerodynamics-lab/">Computational Aerodynamics Lab</a>
+        </p>
+        <p class="affiliation-line"> Supervisor website:
+          <a href="https://www.utias.utoronto.ca/computational-aerodynamics-lab/">Prof. David Zingg</a>
+        </p>
+      </div>
+
+      <!-- Homepage portrait. -->
+      <figure class="portrait-photo">
+        <img src="fotos/home.jpeg" alt="Alex Bercik">
+      </figure>
+    </section>
+
+    <!-- Short academic introduction. -->
+    <section class="intro-paragraph">
+      <p>
+        I am a PhD candidate supervised by Prof. David Zingg in the Computational Aerodynamics Lab
+        at the University of Toronto. My research focuses on the development of robust, efficient,
+        and mathematically rigorous numerical methods for the solution of partial differential 
+        equations, with a focus on the hyperbolic problems arising from fluid dynamics.
+        I work with entropy-stable summation-by-parts (SBP) methods, which by satisfying
+        integration by parts at the discrete level, provide an algebraic framework for reproducing 
+        the various stability and conservation proofs of the continuous problem. Although the SBP
+        umbrella covers quite a large range of numerical schemes (both mesh-based and mesh-free), 
+        I focus on finite-difference, discontinuous Galerkin, continuous Galerkin, 
+        and finite-volume methods. See my Research page for more details. 
+      </p>
+      <p> I expect to defend my PhD in November 2026. </p>
+    </section>
   </main>
 </body>
 </html>

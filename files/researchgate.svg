@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ResearchGate">
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <text x="8" y="41" fill="#0f5f6c" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">RG</text>
+  <circle cx="51" cy="41" r="4" fill="#0f5f6c"/>
+</svg>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Alex Bercik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Site header and navigation. -->
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="publications.html">Publications</a>
+      <a href="software.html">Software</a>
+      <a href="about.html">About Me</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page introduction. -->
+    <section class="page-intro">
+      <p class="eyebrow">Research</p>
+      <p>For the full list of publications, see my <a href="https://scholar.google.com/citations?user=2FA_S1sAAAAJ&amp;hl=en">Google Scholar</a>. Most publications are available as preprints on <a href="https://arxiv.org/search/?searchtype=author&amp;query=Bercik%2C+A">arXiv</a>.</p>
+    </section>
+
+    <!-- Research project summaries. -->
+    <section class="project-list">
+      <article class="project-card">
+        <div>
+          <h2>Volume Dissipation for SBP Methods</h2>
+          <p>
+            For decades, numerical dissipation was employed in computational fluid dynamics 
+            primarily as a mechanism to stabilize a simulation. Following the development of 
+            entropy-stable schemes however, one can now develop provably robust methods
+            without the inclusion of any numerical dissipation at all! Conventional wisdom
+            may then lead one to assume that less volume dissipation leads to a more accurate
+            numerical scheme. In this project we show the contrary, that even for provably
+            nonlinearly stable schemes, the inclusion of volume dissipation can be beneficial
+            for a variety of reasons, including the damping of unresolved modes, the damping 
+            of unphysical Jacobian eigenvalues, and assisting in positivity preservation. 
+            We construct volume dissipation operators compatible with a wide variety of SBP
+            schemes, and discuss connections to upwind (flux-vector splitting) schemes.
+          </p>
+          <p class="project-links">
+            <a href="https://doi.org/10.1007/s10915-026-03213-y">Journal article</a>
+            <a href="https://arxiv.org/abs/2503.12670">arXiv preprint</a>
+          </p>
+        </div>
+        <!-- Temporary project image. Replace with project-specific photos later. -->
+        <figure class="image-photo">
+          <img src="fotos/KHI_csbp_p4_nen480_nelem1_had_ent02_scamat_soln_t67.png">
+        </figure>
+      </article>
+
+      <article class="project-card">
+        <div>
+          <h2>Local Linear Instabilities in Entropy-Stable Schemes</h2>
+          <p>
+            Concerns have been raised regarding the unphysical perturbation growth of
+            entropy-stable schemes (see [Gassner, Svärd, & Hindenlang, 2022]). 
+            Although entropy-stable schemes satisfy nonlinear estimates consistent with 
+            the continuous problem, their linearizations may not. This has the potential
+            to allow perturbations to grow in an unphysical manner, degrading the 
+            physical reliability of a simulation. In this work we analyze the practical
+            impact of these linear instabilities, and determine that they do not pose a 
+            practical obstacle to the use of high-order entropy-stable methods. For a 
+            simple model problem we develop a sharp perturbation growth bound, then 
+            use Floquet analysis to demonstrate that unstable spectra of frozen linearized 
+            Jacobians do not necessarily lead to perturbation growth. We also
+            discuss practical means of controlling any undesired perturbation growth, as
+            well as poor near-vacuum behaviour of the logarithmic mean.
+          </p>
+          <p class="project-links">
+            <a href="https://arxiv.org/abs/2605.02081">arXiv preprint</a>
+          </p>
+        </div>
+        <!-- Temporary project image. Replace with project-specific photos later. -->
+        <figure class="image-photo">
+          <img src="fotos/floquet_eigvals_Circulantp8.jpg">
+        </figure>
+      </article>
+
+      <article class="project-card">
+        <div>
+          <h2>SBP Operators for General Function Spaces</h2>
+          <p>
+            This ongoing project investigates the use of nonpolynomial basis functions 
+            to improve the accuracy of SBP methods for challenging practical problems
+            without having to re-mesh. More details on this project are to come!
+          </p>
+          <p class="muted-note">To be submitted soon...</p>
+        </div>
+        <!-- Temporary project image. Replace with project-specific photos later. -->
+        <figure class="image-photo">
+          <img src="fotos/futevolei.JPG" alt="Placeholder for generalized Gaussian quadrature project images">
+        </figure>
+      </article>
+
+      <article class="project-card">
+        <div>
+          <h2>SBP Schemes on Curvilinear Meshes</h2>
+          <p>
+            When mesh-based SBP methods are used to solve practical problems, curvilinear
+            coordinate transformations are used to map between the reference element and 
+            the physical domain. In doing so, several geometric quantities must be 
+            computed, including the volume and surface metric terms, the boundary normals, 
+            and metric Jacobians. In this work we study and contrast the various existing 
+            methods computing such terms, and investigate their impact on the accuracy of
+            the primal and dual problems through both theoretical analysis and extensive
+            numerical experiments. We also develop a novel method for calculating optimized
+            surface metrics suitable for use with non-polynomial mappings.
+          </p>
+          <p class="muted-note">To be submitted soon...</p>
+        </div>
+        <!-- Temporary project image. Replace with project-specific photos later. -->
+        <figure class="image-photo">
+          <img src="fotos/futevolei.JPG" alt="Placeholder for curvilinear coordinate project images">
+        </figure>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

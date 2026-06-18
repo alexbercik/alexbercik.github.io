@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Google Scholar">
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <path d="M8 24 32 10l24 14-24 14L8 24Z" fill="#0f5f6c"/>
+  <path d="M18 33c3 8 8 12 14 12s11-4 14-12" fill="none" stroke="#0f5f6c" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="32" cy="34" r="9" fill="#ffffff" stroke="#0f5f6c" stroke-width="5"/>
+</svg>
