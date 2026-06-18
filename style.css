@@ -126,7 +126,7 @@ p {
   align-items: center;
   width: fit-content;
   max-width: 100%;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 0.8rem;
 }
 
 .hero-text p {
@@ -155,6 +155,14 @@ p {
   flex-wrap: wrap;
   gap: 0.7rem;
   margin-top: 1.3rem;
+}
+
+.home-links {
+  margin-top: 0.85rem;
+}
+
+.home-links p {
+  margin-bottom: 0.18rem;
 }
 
 .social-links a {
@@ -212,7 +220,7 @@ p {
 
 .intro-paragraph {
   max-width: 860px;
-  margin-top: 1.2rem;
+  margin-top: 0.35rem;
 }
 
 /* Photos. */
