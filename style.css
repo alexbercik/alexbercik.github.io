@@ -8,7 +8,6 @@
   --accent: #0f5f6c;
   --accent-dark: #0a4450;
   --accent-soft: #e6f1f3;
-  --warm: #f4efe7;
 }
 
 * {
@@ -176,11 +175,8 @@ p {
 }
 
 .social-links img {
-  position: relative;
-  z-index: 1;
   width: 1.45rem;
   height: 1.45rem;
-  background: var(--panel);
 }
 
 .sr-only {
@@ -219,9 +215,7 @@ p {
   margin-top: 1.2rem;
 }
 
-/* Image placeholders and temporary photos. */
-.portrait-placeholder,
-.image-placeholder,
+/* Photos. */
 .portrait-photo,
 .image-photo,
 .natural-photo {
@@ -229,43 +223,24 @@ p {
   place-items: center;
   margin: 0;
   overflow: hidden;
-  border: 1px dashed #9db2bd;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background:
-    linear-gradient(135deg, rgba(15, 95, 108, 0.08), rgba(244, 239, 231, 0.95)),
-    var(--warm);
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.portrait-photo,
-.image-photo,
-.natural-photo {
-  border-style: solid;
   background: var(--panel);
 }
 
-.portrait-photo img,
-.image-photo img {
+.portrait-photo img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
+.image-photo img,
 .natural-photo img {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 100%;
   height: auto;
-}
-
-.portrait-placeholder {
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 4 / 5;
 }
 
 .portrait-photo {
@@ -273,34 +248,27 @@ p {
   aspect-ratio: 4 / 5;
 }
 
-.image-placeholder {
-  width: 100%;
-  min-height: 210px;
-  aspect-ratio: 4 / 3;
-}
-
 .image-photo {
   width: 100%;
-  min-height: 210px;
-  aspect-ratio: 4 / 3;
+  max-width: 420px;
 }
 
-/* Simple gallery for future personal photos. */
+/* Personal photo gallery. */
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, max-content));
-  gap: 1rem;
-  align-items: start;
+  max-width: 960px;
+  column-width: 260px;
+  column-gap: 1.1rem;
+}
+
+.photo-grid .natural-photo {
+  display: block;
+  width: 100%;
+  margin: 0 0 1.1rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 /* Cards and repeated content. */
-.topic-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.topic-grid article,
 .project-card,
 .cv-panel {
   border: 1px solid var(--line);
@@ -309,11 +277,6 @@ p {
   box-shadow: 0 10px 25px rgba(31, 41, 51, 0.04);
 }
 
-.topic-grid article {
-  padding: 1.1rem;
-}
-
-.topic-grid p,
 .project-card p:last-child {
   margin-bottom: 0;
 }
@@ -335,6 +298,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
+}
+
+.project-images {
+  display: grid;
+  gap: 1rem;
 }
 
 .muted-note {
@@ -369,15 +337,20 @@ p {
 
 .course-entry h3,
 .course-context,
-.course-link,
 .course-entry .entry-meta {
   margin-bottom: 0.25rem;
 }
 
-.course-context,
-.course-link {
+.course-context {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.course-link {
+  margin-left: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .entry-list {
@@ -420,27 +393,27 @@ p {
   }
 
   .hero,
-  .project-card,
-  .topic-grid,
-  .photo-grid {
+  .project-card {
     grid-template-columns: 1fr;
-  }
-
-  .portrait-placeholder {
-    max-width: 260px;
   }
 
   .portrait-photo {
     width: min(260px, 100%);
   }
 
-  .image-placeholder,
   .image-photo {
-    min-height: 180px;
+    max-width: 100%;
   }
 
   .natural-photo img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .photo-grid {
+    column-width: auto;
+    column-count: 1;
   }
 }
 

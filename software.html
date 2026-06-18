@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Site header and navigation. -->
   <header class="site-header">
     <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
@@ -21,32 +20,31 @@
   </header>
 
   <main>
-    <!-- Page introduction. -->
     <section class="page-intro">
       <p class="eyebrow">Software</p>
       <p>
-        Below are a selected list of repositories and numerical tools to which I have either directly built or made significant contributions to.
+        Below is a selected list of repositories and numerical tools that I have
+        built or made significant contributions to.
       </p>
     </section>
 
-    <!-- Public repository links. -->
     <section class="content-section plain-section">
       <ul class="bullet-list">
         <li>
-          <a href="https://github.com/alexbercik/ESSBP">ESSBP</a>: 
+          <a href="https://github.com/alexbercik/ESSBP">ESSBP</a>:
           My python-based package capable of solving hyperbolic conservation laws
-          with SBP and entropy-stable schemes in up to 3 dimensions. It is not 
-          particularly fast, but thanks to the wonders of JIT, not that slow either - 
+          with SBP and entropy-stable schemes in up to 3 dimensions. It is not
+          particularly fast, but thanks to the wonders of JIT, not that slow either.
           Perfect for sandbox development!
         </li>
         <li>
           I am a contributor and former code-manager of the in-house group code Jetstream,
           a Fortran code developed in the
           <a href="https://www.utias.utoronto.ca/computational-aerodynamics-lab/">Computational Aerodynamics Lab</a>
-          at the University of Toronto, to solve the RANS equations using a Parallel Implicit
-          Newton-Krylov Shur solver. For details regarding the code, we refer to either the 
-          group website above, or 
-          <a href="https://www.utias.utoronto.ca/computational-aerodynamics-lab/">this</a> publication.
+          at the University of Toronto. At the core is a parallel implicit Newton-Krylov-Schur flow solver
+          for the RANS equations, LES, and DNS. For details, I refer to either the
+          group website above, or
+          <a href="http://oddjob.utias.utoronto.ca/dwz/Miscellaneous/OZ_AIAAJ.pdf">this</a> publication.
         </li>
         <li>
           Coming soon: a Julia repository for generating SBP operators on general function spaces.
