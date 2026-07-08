@@ -109,14 +109,27 @@
         <div>
           <h2>SBP Operators for General Function Spaces</h2>
           <p>
-            This ongoing project investigates the use of nonpolynomial basis functions
-            to improve the accuracy of SBP methods for challenging practical problems
-            without having to re-mesh. More details on this project are to come!
+            It is well known that polynomial-based operators struggle for practical problems
+            involving singularities or high gradients, such as cracks in solid mechanics, or 
+            boundary layers in fluid mechanics. 
+            If some a priori knowledge of the solution is available, then a nonpolynomial basis 
+            can dramatically improve the accuracy of a numerical method by more accurately 
+            capturing these challenging features (without having to re-mesh!).
+            This project constructs SBP operators for arbitrary bases with
+            provably minimal degrees of freedom. We introduce an 
+            improved algorithm for the computation of generalized Gaussian quadratures, as
+            well as an optimized operator construction procedure.
+
           </p>
           <p class="muted-note">To be submitted soon...</p>
+          <!--
+          <p class="project-links">
+            <a href="https://arxiv.org/abs/2605.02081">arXiv preprint</a>
+          </p>
+          -->
         </div>
         <figure class="image-photo">
-          <img src="fotos/exponential.jpg" alt="Exponential function space approximation">
+          <img src="fotos/exp_mixed_p3_open_eps00125_sol.jpg" alt="Exponential function space approximation">
         </figure>
       </article>
     </section>
